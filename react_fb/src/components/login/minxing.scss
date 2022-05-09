@@ -1,0 +1,37 @@
+@mixin respond-to($media) {
+	@if $media==SmartphonesLandscapeAndPortrait {
+		@media (min-device-width:320px)and (max-device-width:480px) {
+			@content
+		}
+	}
+
+	@else if $media==iPad {
+		@media (min-width:1024px) {
+			@content
+		}
+	}
+
+	@else if $media==iPadMini {
+		@media (min-width:768px) {
+			@content
+		}
+	}
+
+	@else if $media==laptop {
+		@media (min-width:1224px) {
+			@content
+		}
+	}
+
+	@else if $media==LargeScreens {
+		@media (min-width:1824px) {
+			@content
+		}
+	}
+
+	@else if $media==smartPhoneLarge {
+		@media (min-width:481px) and (max-width:767px) {
+			@content
+		}
+	}
+}

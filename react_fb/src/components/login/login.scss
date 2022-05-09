@@ -1,0 +1,277 @@
+@import "./minxing.scss";
+
+
+
+.main {
+    width: 100%;
+
+    .contentLeft {
+        float: left;
+        position: absolute;
+        left: 15%;
+        top: 25%;
+        width: 50%;
+
+        @include respond-to(laptop) {
+            width: 50%;
+            left: 10% !important;
+            top: 25%
+        }
+
+        @include respond-to(iPadMini) {
+            width: 50%;
+            left: 5%;
+            top: 25%
+        }
+
+        @include respond-to(smartPhoneLarge) {
+            width: 50%;
+            left: 5%;
+            top: 25%
+        }
+
+        @include respond-to(iPad) {
+            width: 50%;
+            left: 5%;
+            top: 25%;
+        }
+
+        @include respond-to(SmartphonesLandscapeAndPortrait) {
+            width: 100%;
+            top: 10px;
+            left: 0%;
+            text-align: center;
+        }
+
+
+
+        .logo {
+            font-size: 60px;
+            margin-bottom: 5px;
+            color: #1877f2;
+
+            @include respond-to(LargeScreens) {
+                font-size: 70px !important;
+            }
+
+            @include respond-to(laptop) {
+                font-size: 60px;
+                margin-bottom: 5px;
+                color: #1877f2;
+            }
+
+            @include respond-to(iPadMini) {
+                font-size: 40px;
+            }
+
+            @include respond-to(smartPhoneLarge) {
+                font-size: 40px;
+            }
+
+            @include respond-to(iPad) {
+                font-size: 50px;
+            }
+
+            @include respond-to(SmartphonesLandscapeAndPortrait) {
+                font-size: 40px;
+            }
+
+
+        }
+
+        .slogan {
+            font-size: 28px;
+
+            @include respond-to(LargeScreens) {
+                font-size: 32px !important;
+            }
+
+            @include respond-to(iPadMini) {
+                font-size: 26px;
+            }
+
+            @include respond-to(smartPhoneLarge) {
+                font-size: 26px;
+            }
+
+            @include respond-to(iPad) {
+                font-size: 28px;
+            }
+
+            @include respond-to(SmartphonesLandscapeAndPortrait) {
+                font-size: 24px;
+            }
+
+
+        }
+    }
+
+    .contentRight {
+        width: 30%;
+        float: right;
+        position: absolute;
+        background-color: #ffff;
+        right: 10%;
+        top: 20%;
+        margin: 5px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 9px rgb(184, 184, 184),
+            -1px -1px 5px rgb(184, 184, 184);
+
+
+
+        @include respond-to(laptop) {
+            width: 30% !important;
+            right: 10% !important;
+        }
+
+        @include respond-to(iPadMini) {
+            width: 40%;
+            right: 2%;
+            top: 20%;
+        }
+
+        @include respond-to(smartPhoneLarge) {
+            width: 40%;
+            right: 2%;
+            top: 20%;
+        }
+
+
+        @include respond-to(iPad) {
+            width: 35%;
+            right: 2%;
+            top: 20%;
+        }
+
+        @include respond-to(SmartphonesLandscapeAndPortrait) {
+            width: 90%;
+            right: 4%;
+            margin: 5px;
+            top: 25%;
+        }
+
+
+
+        p {
+            color: red;
+            margin-left: 20px;
+            margin-top: -10px;
+        }
+
+        .text {
+            margin: 10px;
+            background-color: #ffff;
+            font-size: 15px;
+            width: 95%;
+        }
+
+        .loginBtn {
+            margin: 10px;
+            padding: 15px;
+            height: 50px;
+            border-radius: 5px;
+            font-size: 20px;
+            border: none;
+            font-weight: bolder;
+            width: 95%;
+
+        }
+
+        .link {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            height: 50px;
+            margin: 10px;
+            background: none;
+
+            .linkForgotPassword {
+                background: none;
+                text-decoration: none;
+                color: #1877f2;
+            }
+        }
+
+        .createBtn {
+            text-align: center;
+            margin-top: -5%;
+            margin-bottom: 20px;
+            margin-left: 70px;
+            width: 65%;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #43a62f;
+            border-radius: 5px;
+
+            @include respond-to(iPadMini) {
+                margin-left: 20%;
+            }
+
+            @include respond-to(smartPhoneLarge) {
+                margin-left: 20%;
+            }
+
+            .createBtnAccount {
+                text-decoration: none;
+                background: none;
+                color: #ffff;
+                font-weight: bolder;
+                font-size: 17px;
+            }
+        }
+    }
+
+    .sloganRight {
+        position: absolute;
+        right: 5%;
+        top: 95% !important;
+        margin: 10px;
+        width: 30%;
+        text-align: center;
+        font-size: 15px;
+        font-weight: normal;
+
+        @include respond-to(laptop) {
+            width: 30% !important;
+            right: 10% !important;
+            top: 80% !important;
+        }
+
+        @include respond-to(iPadMini) {
+            width: 40%;
+            right: 2%;
+
+        }
+
+        @include respond-to(smartPhoneLarge) {
+            width: 40%;
+            right: 2%;
+
+        }
+
+        @include respond-to(iPad) {
+            right: 2%;
+            width: 35%;
+
+        }
+
+        @include respond-to(SmartphonesLandscapeAndPortrait) {
+            width: 90%;
+            right: 4%;
+            top: 90%;
+        }
+
+
+
+        .newPage {
+            font-size: 15px;
+            font-weight: 600;
+            color: inherit;
+            text-decoration: none;
+
+
+        }
+    }
+
+}

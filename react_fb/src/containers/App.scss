@@ -1,0 +1,20 @@
+.app{
+    background-color: #f1f2f5;
+    font-size: 14px;
+    overflow:hidden;
+    overflow-y: hidden;
+
+}
+.appBody{
+    display: flex;
+    .row{
+        font-size: 14px;
+    }
+}
+h4{
+    font-size: 1em;
+}
+h3{
+    font-size: 1.3em;
+    margin: 10px;
+}

@@ -1,0 +1,205 @@
+@import "../Responese/minxing.scss";
+
+.headers {
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    background-color: white;
+    z-index: 100;
+    top: 0;
+    box-shadow: 0px 3px 8px -9px rgba(0, 0, 0, 0.75);
+
+    .headerLeft {
+        display: flex;
+        justify-content: space-evenly;
+        float: left;
+
+        .logo {
+            height: 40px;
+            margin-top: 5px;
+
+        }
+
+        .headerSearch {
+            display: flex;
+            align-items: center;
+            background: color #eff2f5;
+            padding: 10px;
+            margin-left: 10px;
+            border-radius: 999px;
+
+
+
+            .searchInput {
+                font-size: 16px;
+                border: none;
+                background-color: transparent;
+                outline-width: 0;
+
+                @include respond-to(SmartphonesLandscapeAndPortrait) {
+                    visibility: hidden;
+                }
+
+                @include respond-to(smartPhoneLarge) {
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+
+    .headerRight {
+        float: right;
+        display: flex;
+
+        @include respond-to(smartPhoneLarge) {
+            margin-left: -220px;
+        }
+
+        @include respond-to(SmartphonesLandscapeAndPortrait) {
+            margin-left: -220px;
+        }
+
+        .headerInfo {
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
+
+            @include respond-to(laptop) {
+                display: flex;
+                align-items: center;
+                margin-right: 15px;
+                visibility: visible !important;
+            }
+
+            @include respond-to(iPad) {
+                visibility: hidden;
+            }
+
+            @include respond-to(iPadMini) {
+                visibility: hidden;
+            }
+
+            @include respond-to(smartPhoneLarge) {
+                visibility: hidden;
+            }
+
+            @include respond-to(SmartphonesLandscapeAndPortrait) {
+                visibility: hidden;
+            }
+
+            h4 {
+                display: flex;
+                margin-left: 5px;
+                margin-bottom: -1px;
+
+            }
+        }
+
+        .linkHomePage {
+            margin-right: 15px;
+            align-items: center;
+            display: flex;
+
+            @include respond-to(laptop) {
+                margin-right: 15px;
+                align-items: center;
+                display: flex;
+                visibility: visible !important;
+            }
+
+            @include respond-to(iPad) {
+                visibility: hidden;
+            }
+
+            @include respond-to(iPadMini) {
+                visibility: hidden;
+            }
+
+            @include respond-to(smartPhoneLarge) {
+                visibility: hidden;
+            }
+
+            @include respond-to(SmartphonesLandscapeAndPortrait) {
+                visibility: hidden;
+            }
+
+            .homePage {
+                text-decoration: none;
+                color: #2e81f4;
+                font-weight: 600;
+
+            }
+
+        }
+
+        .createNew {
+            margin-right: -35px;
+            align-items: center;
+            display: flex;
+            text-decoration: none;
+
+            @include respond-to(laptop) {
+                margin-right: -35px;
+                align-items: center;
+                display: flex;
+                text-decoration: none;
+                visibility: visible !important;
+            }
+
+            @include respond-to(iPad) {
+                visibility: hidden;
+            }
+
+            @include respond-to(iPadMini) {
+                visibility: hidden;
+            }
+
+            @include respond-to(smartPhoneLarge) {
+                visibility: hidden;
+            }
+
+            @include respond-to(SmartphonesLandscapeAndPortrait) {
+                visibility: hidden;
+            }
+
+            .create {
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+            }
+        }
+
+        .menuIcon {
+            .menu {
+                visibility: hidden;
+
+                @include respond-to(laptop) {
+                    visibility: hidden !important;
+                }
+
+                @include respond-to(iPad) {
+                    visibility: visible;
+                }
+
+                @include respond-to(iPadMini) {
+                    visibility: visible;
+                }
+
+                @include respond-to(smartPhoneLarge) {
+                    visibility: visible;
+                }
+
+                @include respond-to(SmartphonesLandscapeAndPortrait) {
+                    visibility: visible !important;
+                }
+            }
+
+        }
+
+        .MuiSvgIcon-root {
+            margin-right: 5px;
+        }
+
+    }
+}

@@ -1,0 +1,98 @@
+@import "/src/components/dashboard/Responese/minxing.scss";
+
+.listItems {
+    margin-left: 120px;
+    margin-top: 25px;
+    float: right;
+
+    @include respond-to(LargeScreens) {
+        float: right;
+        margin-left: 500px !important;
+        visibility: visible !important;
+    }
+
+    @include respond-to(laptopLarge) {
+        float: right;
+        margin-left: 500px !important;
+    }
+
+    @include respond-to(laptop) {
+        margin-left: 200px;
+        margin-top: 25px;
+        float: right;
+        visibility: visible !important;
+    }
+
+    @include respond-to(iPadMini) {
+        visibility: hidden;
+    }
+
+    @include respond-to(smartPhoneLarge) {
+        visibility: hidden;
+    }
+
+    @include respond-to(SmartphonesLandscapeAndPortrait) {
+        visibility: hidden;
+    }
+
+
+
+    .listItemsTop {
+        margin-top: 10px;
+        border-bottom: 1px rgba(128, 128, 128, 0.24) solid;
+
+
+        .titleListItemsTop {
+            margin-bottom: 10px;
+
+            h3 {
+                color: rgba(110, 108, 108, 0.676);
+            }
+        }
+
+        .birthday {
+            align-items: center;
+            display: flex;
+            margin-bottom: 10px;
+
+            .iconBirthday {
+                color: rgb(58, 58, 222);
+                font-size: xx-large;
+            }
+
+            h4 {
+                margin-left: 5px;
+                color: rgba(0, 0, 0, 0.425);
+                font-size: 14px;
+            }
+        }
+    }
+
+    .listItemsBottom {
+        margin-top: 10px;
+
+        .searchBottom {
+            display: flex;
+            align-items: center;
+            background: color #eff2f5;
+            padding: 10px;
+            border-radius: 999px;
+
+            .iconSearch {
+                color: rgba(128, 128, 128, 0.338);
+                margin-right: 40px;
+            }
+
+            input {
+                font-size: 20px;
+                font-weight: 600;
+                border: none;
+                background-color: transparent;
+                outline-width: 0;
+                width: auto;
+            }
+        }
+
+    }
+
+}

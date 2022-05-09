@@ -1,0 +1,63 @@
+@import "/src/components/dashboard/Responese/minxing.scss";
+
+.post {
+    margin-top: 15px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
+    width: 80%;
+
+    @include respond-to(LargeScreens) {
+        width: 80% !important;
+    }
+
+    @include respond-to(laptop) {
+        width: 80% !important;
+    }
+
+    @include respond-to(iPadMini) {
+        width: 130%;
+    }
+
+    @include respond-to(SmartphonesLandscapeAndPortrait) {
+        width: 140%
+    }
+
+    .postTop {
+        display: flex;
+        position: relative;
+        align-items: center;
+        padding: 15px;
+
+        .postAvatar {
+            margin-right: 10px;
+        }
+
+        .postTopInfo {
+            h3 {
+                font-size: medium;
+                margin-top: 20px;
+            }
+
+            p {
+                font-size: small;
+                color: gray;
+                margin-top: -10px;
+            }
+
+        }
+    }
+
+    .postBottom {
+        padding: 15px 25px;
+    }
+
+    .postImage {
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+
+        }
+    }
+}

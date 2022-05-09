@@ -1,0 +1,65 @@
+@import "/src/components/dashboard/Responese/minxing.scss";
+
+.sidebar {
+    padding: 25px 10px;
+    float: left;
+
+    @include respond-to(laptop) {
+        padding: 25px 10px !important;
+        float: left !important;
+        visibility: visible !important;
+    }
+
+    @include respond-to(iPad) {
+        visibility: hidden;
+    }
+
+    @include respond-to(iPadMini) {
+        visibility: hidden;
+    }
+
+    @include respond-to(smartPhoneLarge) {
+        visibility: hidden;
+    }
+
+    @include respond-to(SmartphonesLandscapeAndPortrait) {
+        visibility: hidden;
+    }
+
+    .sidebarTop {
+        border-bottom: 1px solid rgba(128, 128, 128, 0.062);
+    }
+
+    .sidebarMiddle {
+        align-items: center;
+
+        .titleMiddle {
+            color: rgba(125, 124, 124, 0.637);
+        }
+
+    }
+
+    .seeMore {
+        align-items: center;
+        display: flex;
+        text-decoration: none;
+        background-color: rgba(167, 165, 165, 0.142);
+        height: 40px;
+        border-radius: 5%;
+        width: 250px;
+
+        .more {
+            margin-left: 70px;
+            color: rgba(0, 0, 0, 0.61);
+
+
+        }
+    }
+
+    .sidebarBottom {
+        .titleBottom {
+            color: rgba(125, 124, 124, 0.637);
+
+        }
+    }
+}

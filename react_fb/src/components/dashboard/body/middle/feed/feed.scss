@@ -1,0 +1,38 @@
+@import "/src/components/dashboard/Responese/minxing.scss";
+
+.feed {
+
+    display: flex !important;
+
+    flex-direction: column;
+
+    @include respond-to(laptop) {
+        margin-left: 0px !important;
+    }
+
+    @include respond-to(iPad) {
+        margin-left: -200px;
+    }
+
+    @include respond-to(iPadMini) {
+        margin-left: -150px;
+    }
+
+    @include respond-to(smartPhoneLarge) {
+        margin-left: -140px;
+        width: 650px;
+    }
+
+    @include respond-to(SmartphonesLandscapeAndPortrait) {
+        margin-left: -130px;
+    }
+
+    .topFeed {
+        display: flex !important;
+
+        @include respond-to(LargeScreens) {
+            width: 150px !important;
+        }
+    }
+
+}

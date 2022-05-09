@@ -1,0 +1,9 @@
+@import "/src/components/dashboard/Responese/minxing.scss";
+
+.storyList {
+    display: flex !important;
+
+    @include respond-to(LargeScreens) {
+        margin-left: 80px !important;
+    }
+}
